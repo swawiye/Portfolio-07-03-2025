@@ -5,51 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="design.css">
+    <!-- Social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
+ <!-- Navbar -->
     <nav class="navbar">
         <div class="container">
-            <a href="#" class="logo">IKIGO</a>
+            <div class="logo">MyPortfolio</div>
             <br>
             <ul class="nav-links">
-                <li> <a href="Home.html">Home</a> </li>
-                <li> <a href="About Me.html">About Me</a> </li>
-                <li> <a href="Contact Us.html">Contact Us</a> </li>
+                <li> <a href="index.html">Home</a> </li>
+                <li> <a href="About-Me.html">About Me</a> </li>
+                <li> <a href="Contact-Us.html">Contact Us</a> </li>
             </ul>
+            <div class="menu-icon">&#9776;</div>
         </div>
     </nav>
-    <div class="container">
-        <p>        
-            <b><i>Who am I?</i></b>
-            This simple sentence with three words is one which we have all encountered at least 
-            once in our lives. Whether it was a question someone else prompted you to answer, or 
-            a question that arose from your curiosuty and you had to answer it yourself. This 
-            seemingly simple question calls for deep self-reflection. For a long time, I found 
-            this question disturbing since unlike others, I did not have a concrete answer. I was 
-            who I was, and I am who I am- that's what I thought the answer was for me. However, it
-            is not. This question cannot be answered in a singular statement, it has many layers and 
-            dimensions to it. One of the dimensions happen to be one's skills and interests.
-        </p>
+<!-- Hero Section -->
+<header id="hero">
+    <div class="hero-content">
+       <h1>Welcome to my porfolio</h1>
+       <p>Learn more about me and what drives me</p>
+       <a href="index.html" class="btn">Start your experience</a>
     </div>
+</header>
+<!-- Main Section -->
+ <main>
     <div class="container">
-        <p>
-            Despite having numerous interests,  these are some of them that heavily reasonate with 
-            me and who I am. My interests include:
-            <br>
-            <ul class="list">
-                <li>~ Photography</li>
-                <li>~ Drawing</li>
-                <li>~ Colouring</li>
-                <li>~ Painting</li>
-                <li>~ Cooking</li>
-                <li>~ Reading</li>
-                <li>~ Research</li>
-                <li>~ Videography</li>
-                <li>~ Graphic Design</li>
-                <li>~ Hairdressing</li>
-            </ul>
-        </p>
+        <div class="item">
+            <p>
+                <b><i>Who am I?</i></b>
+            </p>
+        </div>
+        <div class="item">
+            <p>        
+                This simple sentence with three words is one which we have all encountered at least 
+                once in our lives. Whether it was a question someone else prompted you to answer, or 
+                a question that arose from your curiosuty and you had to answer it yourself. This 
+                seemingly simple question calls for deep self-reflection. For a long time, I found 
+                this question disturbing since unlike others, I did not have a concrete answer. I was 
+                who I was, and I am who I am- that's what I thought the answer was for me. However, it
+                is not. This question cannot be answered in a singular statement, it has many layers and 
+                dimensions to it. One of the dimensions happen to be one's skills and interests.
+            </p>
+        </div>
     </div>
+    <section id="services">
+        <h3>My interests</h3>
+            <div class="services-container">
+                <div class="service-card">
+                    <h4>Photography</h4>
+                </div>
+                <div class="service-card">
+                    <h4>Drawing</h4>
+                </div>
+                <div class="service-card">
+                    <h4>Colouring</h4>
+                </div>
+                <div class="service-card">
+                    <h4>Painting</h4>
+                </div>
+                <div class="service-card">
+                    <h4>Cooking</h4>
+                </div>
+                <div class="service-card">
+                    <h4>Reading</h4>
+                </div>                
+                <div class="service-card">
+                    <h4>Research</h4>
+                </div>                
+                <div class="service-card">
+                    <h4>Videography</h4>
+                </div>                
+                <div class="service-card">
+                    <h4>Graphic Design</h4>
+                </div>
+                <div class="service-card">
+                    <h4>Hairdressing</h4>
+                </div>
+        </tr>
+        </table>
+    </section>
     <div class="container">
         <h4>HTML Tables</h4>
         <table border="1">
@@ -79,8 +116,32 @@
            </tr>
         </table>
     </div>
-    <footer>
-        <p>&copy; 2025 CSS Tutorial, All Rights Reserved</p>
-    </footer>
+</main>
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+    <div class="footer-column">
+       <h3>Quick Links</h3>
+          <ul>
+            <li> <a href="index.html">Home</a> </li>
+            <li> <a href="About-Me.html">About Me</a> </li>
+            <li> <a href="Contact-Us.html">Contact Us</a> </li>
+          </ul>
+    </div>
+    <div class="footer-column">
+        <h3>Contact</h3>
+          <p>Email: sovereign.wawiye@gmail.com</p>
+          <p>Phone: +254701374708</p>
+    </div>
+    <!-- Social Media Links -->
+    <div class="footer-column">
+        <h3>Follow Us</h3>
+           <div class="social-links">
+             <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+             <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+           </div>
+           <p class="footer-bottom">&copy; 2025 Sovereign's Porfolio | All Rights Reserved </p>
+    </div>
+</footer>
 </body>
 </html>

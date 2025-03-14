@@ -4,20 +4,18 @@
 }
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    text-decoration-color: lightsteelblue;
-    background-color: lightsteelblue;
+    background-color: white;
 }
+
+/* Navbar Styling */
 .navbar {
-    background-color: aliceblue;
+    background-color: palevioletred;
     padding: 15px 0;
 }
 .navbar .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.navbar .container a[href="#"] {
-    text-decoration: lightsteelblue;
 }
 .nav-links {
     list-style: none;
@@ -29,7 +27,7 @@ body {
     position: relative;
 }
 .nav-links li a {
-    color: lightsteelblue;
+    color: white;
     text-decoration: none;
     padding: 10px 15px;
 }
@@ -40,7 +38,7 @@ body {
     left: 50%;
     bottom: 0;
     width: 0; height: 2px;
-    background: lightsteelblue;
+    background: white;
     transition: width 0.5s ease, left 0.5s ease;
 }
 /* hover effect */
@@ -51,10 +49,74 @@ body {
 /*styling the logo*/
 .logo {
     font-size: 24px;
-    color: lightsteelblue;
+    color: mediumvioletred;
     font-weight: bold;
     text-decoration: wavy;
 }
+
+/* Hero section-landing page on a website */
+#hero {
+    background: url("assets/herobg.jpg") no-repeat center center/cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5); /* the 'a' controls the opacity */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.btn {
+    display: inline-block;
+    background: palevioletred;
+    color: white;
+    border-radius: 10px; /* rounds the corners */
+    padding: 10px;
+    margin-top: 10px; /* increases space in between elements */
+    text-decoration: none; /* removes the underline */
+     /* hover effect */
+     transition: transform 0.3s ease-in-out color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: mediumvioletred;
+}
+
+/* Main section */
+.container .item {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+.services-container {
+    display: flex; /* makes the items display horizontally */
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.service-card {
+    background: palevioletred;
+    padding: 20px;
+    border-radius: 8px;
+    width: 40%;
+    /* shadow when hovered over*/
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* hover effect on the card */
+.service-card:hover {
+    transform: translateY(-10px);/* offset from the y-axis of the card by 10px */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background: darksalmon; /* button changes to this colour when hovered over */
+}
+
 /*styling the table*/
 table{
     width:100%;
@@ -62,18 +124,18 @@ table{
     margin: 20px 0;
 }
 th, td {
-    border: 1px solid white;
+    border: 1px solid mediumvioletred;
     padding: 10px;
     text-align: center;
 }
 th {
-    background: aliceblue;
-    color: lightsteelblue;
+    background: palevioletred;
+    color: white;
 }
 button {
     padding: 8px;
     background: white;
-    color: lightsteelblue;
+    color: palevioletred;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -84,33 +146,56 @@ button {
 button:hover {
     background: whitesmoke;
 }
-/*styling the footer*/
+
+/* styling the footer */
 footer {
+    background: palevioletred;
+    color: white;
+    padding: 20px 0;
     text-align: center;
-    background: aliceblue;
-    color: lightsteelblue;
-    padding: 20px;
-    margin-top: 20px;
-}
-.container {
-    padding: 10px;
-}
-.form-container {
-    border-radius: 5px;
-    background-color:aliceblue;
-    padding: 10px;
-}
-input{
     width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box; 
+    margin-top: auto;
 }
-label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
-  }
-/* type of bullet */
-.list {
-    list-style-type: decimal;
+
+.footer-container {
+    display: flex;
+    justify-content:space-around;
+    padding: 20px;
+}
+
+.footer-column h3 {
+    margin-bottom:10px;
+}
+
+.footer-column ul {
+    list-style: none; /* removing the bullets */
+    padding: 0;
+}
+
+.footer-column a {
+    text-decoration: none; /* removing the underline from text */
+    margin-bottom: 10px;
+    color: white;
+}
+
+/* styling footer bottom with the copyright section */
+.footer-bottom {
+    margin-top: 10px;
+    column-span: all;
+}
+
+/* styling the social links */
+.social-links {
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.social-links a {
+    font-size: 24px;
+    margin-right: 10px;
+    transition: transform 0.3s ease-in-out color 0.3s ease-in-out;
+}
+.social-links a:hover {
+    color: mediumvioletred;
 }
